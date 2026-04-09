@@ -110,11 +110,22 @@ body {
   background: #2563eb;
 }
 
-.tab-panel {
-  display: none;
+/* Panels visible by default for crawlers and no-JS users */
+.tab-panel + .tab-panel {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #e8e8e4;
 }
 
-.tab-panel.active {
+/* JS adds .js-tabs to enable tab hiding as progressive enhancement */
+.js-tabs .tab-panel {
+  display: none;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.js-tabs .tab-panel.active {
   display: block;
 }
 

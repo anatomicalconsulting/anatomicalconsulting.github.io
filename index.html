@@ -188,45 +188,77 @@
     <!-- Services -->
     <section class="services-section">
       <div class="tab-bar" role="tablist" aria-label="Service categories">
-        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-ce" onclick="switchTab('ce', this)">Dissection-Based CE</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-curriculum" onclick="switchTab('curriculum', this)">Curriculum Development</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-edtech" onclick="switchTab('edtech', this)">Educational Technology</button>
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-procedural" onclick="switchTab('procedural', this)">Procedural Courses</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-elearning" onclick="switchTab('elearning', this)">eLearning</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sme" onclick="switchTab('sme', this)">SME Review</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-workshops" onclick="switchTab('workshops', this)">Live Workshops</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-retainer" onclick="switchTab('retainer', this)">Advisory Retainer</button>
       </div>
 
-      <div class="tab-panel active" id="tab-ce" role="tabpanel">
-        <h3>Dissection-Based Continuing Education Courses</h3>
-        <p class="desc">We work with you to plan, design, organize, and implement your dissection-based continuing education course.</p>
+      <div class="tab-panel active" id="tab-procedural" role="tabpanel">
+        <h3>Cadaver-Based Procedural Courses</h3>
+        <p class="desc"><strong>For</strong> surgeons, clinicians, medical device teams, and aesthetic injectors.</p>
+        <p class="desc">Hands-on cadaver dissection with targeted instruction on the anatomy relevant to specific procedures or devices. Clinicians perform techniques while I dissect to demonstrate exactly where needles, devices, or instruments interact with underlying anatomy. Courses use fresh tissue specimens and are tailored to your clinical or surgical focus area.</p>
         <ul>
           <li>Course design and learning objective development</li>
-          <li>Cadaveric donor coordination and lab logistics</li>
+          <li>Anatomical tissue coordination and lab logistics</li>
           <li>Faculty recruitment and coordination</li>
           <li>On-site anatomical instruction and dissection</li>
           <li>CE/CME accreditation support</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Dissection-Based CE Course Planning'); return false;">Inquire About CE Courses</a>
+        <a class="tab-cta" href="#contact" onclick="showContact('Cadaver-Based Procedural Courses'); return false;">Inquire About Procedural Courses</a>
       </div>
 
-      <div class="tab-panel" id="tab-curriculum" role="tabpanel">
-        <h3>Anatomy Curriculum Development</h3>
-        <p class="desc">We build custom anatomy curricula to meet your needs, allowing your learners to thrive.</p>
+      <div class="tab-panel" id="tab-elearning" role="tabpanel">
+        <h3>eLearning and Content Development</h3>
+        <p class="desc"><strong>For</strong> medical device companies, pharmaceutical companies, and healthcare organizations building digital training programs.</p>
+        <p class="desc">Custom eLearning modules, anatomy lecture content, LMS-ready materials, and educational video development. Designed for sales teams, clinical specialists, and healthcare professionals who need flexible, on-demand anatomy education.</p>
         <ul>
-          <li><strong>Industry</strong>: sales rep and clinical specialist training for medical device and pharmaceutical companies</li>
-          <li><strong>Clinical</strong>: anatomy foundations for residents, fellows, and continuing education participants</li>
-          <li><strong>Institutional</strong>: medical school gross anatomy course design, curricular development, and assessment creation</li>
+          <li>eLearning module design and development</li>
+          <li>Anatomy lecture and presentation content</li>
+          <li>LMS-ready materials and assessments</li>
+          <li>Educational video scripting and review</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Anatomy Curriculum Development'); return false;">Inquire About Curriculum Development</a>
+        <a class="tab-cta" href="#contact" onclick="showContact('eLearning and Content Development'); return false;">Inquire About eLearning</a>
       </div>
 
-      <div class="tab-panel" id="tab-edtech" role="tabpanel">
-        <h3>Educational Technology Consultation</h3>
-        <p class="desc">We consult on the development of educational technology resources for anatomy and medical education, with hands-on expertise in mobile application development and virtual reality.</p>
+      <div class="tab-panel" id="tab-sme" role="tabpanel">
+        <h3>Curriculum Review and SME Auditing</h3>
+        <p class="desc"><strong>For</strong> EdTech companies, publishers, and medical device companies with existing training content.</p>
+        <p class="desc">Subject matter expert review of anatomy-related educational materials, clinical accuracy auditing, and curriculum gap analysis. Ensures your content meets the standard expected by clinicians and medical professionals.</p>
         <ul>
-          <li>Mobile app design and development consultation</li>
-          <li>Virtual reality (VR) learning experience design</li>
-          <li>Digital tool strategy for anatomy education programs</li>
-          <li>Content and subject matter expert review for EdTech products</li>
+          <li>Anatomical accuracy review and fact-checking</li>
+          <li>Curriculum gap analysis and recommendations</li>
+          <li>Product content auditing for EdTech platforms</li>
+          <li>Expert feedback on instructional design</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Educational Technology Consultation'); return false;">Inquire About EdTech Consultation</a>
+        <a class="tab-cta" href="#contact" onclick="showContact('Curriculum Review and SME Auditing'); return false;">Inquire About SME Review</a>
+      </div>
+
+      <div class="tab-panel" id="tab-workshops" role="tabpanel">
+        <h3>Live Workshops and Sales Meetings</h3>
+        <p class="desc"><strong>For</strong> medical device and pharmaceutical sales teams, and aesthetic injectable companies.</p>
+        <p class="desc">In-person anatomy workshops for national sales meetings, product launches, and team training events. Tailored anatomical instruction that connects device or product functionality to the underlying anatomy, building confidence for clinical conversations.</p>
+        <ul>
+          <li>Anatomy presentations for national and regional sales meetings</li>
+          <li>Product-specific anatomical training sessions</li>
+          <li>Interactive workshops with models and visual aids</li>
+          <li>Custom content aligned to your product portfolio</li>
+        </ul>
+        <a class="tab-cta" href="#contact" onclick="showContact('Live Workshops and Sales Meetings'); return false;">Inquire About Workshops</a>
+      </div>
+
+      <div class="tab-panel" id="tab-retainer" role="tabpanel">
+        <h3>Consulting Retainer and Advisory</h3>
+        <p class="desc"><strong>For</strong> companies seeking ongoing access to a PhD anatomist.</p>
+        <p class="desc">Ongoing consulting arrangements for organizations that need regular anatomical expertise. Includes curriculum advisory, content review, training program development, and strategic guidance on anatomy education initiatives.</p>
+        <ul>
+          <li>Monthly or quarterly retainer agreements</li>
+          <li>On-call anatomical consulting and content review</li>
+          <li>Training program strategy and development</li>
+          <li>Long-term curriculum advisory partnerships</li>
+        </ul>
+        <a class="tab-cta" href="#contact" onclick="showContact('Consulting Retainer and Advisory'); return false;">Inquire About Retainers</a>
       </div>
     </section>
 
@@ -276,9 +308,11 @@
             <label for="interest">Area of Interest</label>
             <select id="interest" name="area_of_interest">
               <option value="" disabled selected>Select a service</option>
-              <option value="Dissection-Based CE Course Planning">Dissection-Based CE Course Planning</option>
-              <option value="Anatomy Curriculum Development">Anatomy Curriculum Development</option>
-              <option value="Educational Technology Consultation">Educational Technology Consultation</option>
+              <option value="Cadaver-Based Procedural Courses">Cadaver-Based Procedural Courses</option>
+              <option value="eLearning and Content Development">eLearning and Content Development</option>
+              <option value="Curriculum Review and SME Auditing">Curriculum Review and SME Auditing</option>
+              <option value="Live Workshops and Sales Meetings">Live Workshops and Sales Meetings</option>
+              <option value="Consulting Retainer and Advisory">Consulting Retainer and Advisory</option>
               <option value="Other">Other</option>
             </select>
           </div>
@@ -341,6 +375,9 @@
       btn.classList.add('active');
       btn.setAttribute('aria-selected', 'true');
     }
+
+    // Progressive enhancement: enable tab hiding only when JS is available
+    document.querySelector('.services-section').classList.add('js-tabs');
 
     // Handle direct navigation to hash URLs
     (function() {
