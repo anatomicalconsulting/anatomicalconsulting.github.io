@@ -168,11 +168,11 @@
 
   <!-- Header -->
   <header class="site-header">
-    <a class="logo" href="#services" onclick="showPage('home'); return false;">Anatomical Consulting</a>
+    <a class="logo" href="/">Anatomical Consulting</a>
     <nav>
-      <a href="#services" onclick="showPage('home'); return false;">Services</a>
-      <a href="#about" onclick="showPage('about'); return false;">About</a>
-      <a href="#contact" onclick="showPage('contact'); return false;">Contact</a>
+      <a href="/">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
     </nav>
   </header>
 
@@ -206,7 +206,7 @@
           <li>On-site anatomical instruction and dissection</li>
           <li>CE/CME accreditation support</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Cadaveric Donor-Based Procedural Courses'); return false;">Inquire About Procedural Courses</a>
+        <a class="tab-cta" href="/contact.html?service=procedural">Inquire About Procedural Courses</a>
       </div>
 
       <div class="tab-panel" id="tab-elearning" role="tabpanel">
@@ -219,7 +219,7 @@
           <li>LMS-ready materials and assessments</li>
           <li>Educational video scripting and review</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('eLearning and Content Development'); return false;">Inquire About eLearning</a>
+        <a class="tab-cta" href="/contact.html?service=elearning">Inquire About eLearning</a>
       </div>
 
       <div class="tab-panel" id="tab-sme" role="tabpanel">
@@ -232,7 +232,7 @@
           <li>Product content auditing for EdTech platforms</li>
           <li>Expert feedback on instructional design</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Curriculum Review and SME Auditing'); return false;">Inquire About SME Review</a>
+        <a class="tab-cta" href="/contact.html?service=sme">Inquire About SME Review</a>
       </div>
 
       <div class="tab-panel" id="tab-workshops" role="tabpanel">
@@ -245,7 +245,7 @@
           <li>Interactive workshops with models and visual aids</li>
           <li>Custom content aligned to your product portfolio</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Live Workshops and Sales Meetings'); return false;">Inquire About Workshops</a>
+        <a class="tab-cta" href="/contact.html?service=workshops">Inquire About Workshops</a>
       </div>
 
       <div class="tab-panel" id="tab-retainer" role="tabpanel">
@@ -258,79 +258,11 @@
           <li>Training program strategy and development</li>
           <li>Long-term curriculum advisory partnerships</li>
         </ul>
-        <a class="tab-cta" href="#contact" onclick="showContact('Consulting Retainer and Advisory'); return false;">Inquire About Retainers</a>
+        <a class="tab-cta" href="/contact.html?service=retainer">Inquire About Retainers</a>
       </div>
     </section>
 
   </main>
-
-  <!-- ==================== ABOUT ==================== -->
-  <div id="about" class="subpage">
-
-    <div class="page-header">
-      <h1>About</h1>
-    </div>
-
-    <div class="about-content">
-      <img src="headshot.jpg" alt="Dr. Derek Harmon, PhD Anatomist" class="about-headshot" />
-      <p>Anatomical Consulting LLC is led by <a href="https://www.linkedin.com/in/derek-harmon-0b8473b6/" target="_blank" rel="noopener noreferrer">Dr. Derek Harmon</a>, a PhD anatomist, Associate Professor - Clinical, and Director of Continuing Education for the Division of Anatomy at The Ohio State University College of Medicine. Previously, Dr. Harmon served as the Director of Anatomy at the University of California, San Francisco School of Medicine. He has over 10 years of gross anatomy teaching experience for learners at every level: medical students, residents, fellows, and practicing clinicians.</p>
-      <p>He has developed, organized, and coordinated numerous workshops and continuing education courses, both internally and externally alongside surgical colleagues, serving as both teacher and course coordinator. Whether you are launching a CE course, redesigning a curriculum, or evaluating educational technology, Dr. Harmon brings the expertise to keep your project on track from start to finish.</p>
-    </div>
-
-  </div>
-
-  <!-- ==================== CONTACT ==================== -->
-  <div id="contact" class="subpage">
-
-    <div class="page-header">
-      <h1>General Inquiries</h1>
-    </div>
-
-    <div class="contact-content">
-      <div class="contact-inner">
-        <form id="contact-form">
-          <input type="hidden" name="access_key" value="527dfb06-a227-4e8e-8635-8c230abfee40" />
-          <input type="hidden" name="subject" value="New inquiry from Anatomical Consulting website" />
-          <input type="checkbox" name="botcheck" style="display:none;" />
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@organization.com" required />
-          </div>
-          <div class="form-group">
-            <label for="org">Organization</label>
-            <input type="text" id="org" name="organization" placeholder="Company or institution" />
-          </div>
-          <div class="form-group">
-            <label for="interest">Area of Interest</label>
-            <select id="interest" name="area_of_interest">
-              <option value="" disabled selected>Select a service</option>
-              <option value="Cadaver-Based Procedural Courses">Cadaver-Based Procedural Courses</option>
-              <option value="eLearning and Content Development">eLearning and Content Development</option>
-              <option value="Curriculum Review and SME Auditing">Curriculum Review and SME Auditing</option>
-              <option value="Live Workshops and Sales Meetings">Live Workshops and Sales Meetings</option>
-              <option value="Consulting Retainer and Advisory">Consulting Retainer and Advisory</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your project or goals" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-        <div id="form-success" style="display:none;text-align:center;padding:3rem 0;">
-          <h3 style="font-size:1.4rem;font-weight:700;margin-bottom:0.75rem;">Thank you for reaching out.</h3>
-          <p style="color:#555;font-size:1rem;line-height:1.7;">We will follow up within two business days.</p>
-          <a href="#services" onclick="showPage('home'); return false;" style="display:inline-block;margin-top:1.5rem;color:#2563eb;font-weight:500;cursor:pointer;">Back to Home</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -338,33 +270,6 @@
   </footer>
 
   <script>
-    function showPage(page) {
-      document.getElementById('services').parentElement === null ||
-      (document.getElementById('services').style.display = page === 'home' ? 'block' : 'none');
-      document.getElementById('about').className = page === 'about' ? 'subpage active' : 'subpage';
-      document.getElementById('contact').className = page === 'contact' ? 'subpage active' : 'subpage';
-      if (page === 'contact') {
-        document.getElementById('interest').selectedIndex = 0;
-        document.getElementById('contact-form').style.display = '';
-        document.getElementById('form-success').style.display = 'none';
-      }
-      window.scrollTo(0, 0);
-      history.replaceState(null, '', '#' + (page === 'home' ? 'services' : page));
-    }
-
-    function showContact(serviceName) {
-      showPage('contact');
-      if (serviceName) {
-        var select = document.getElementById('interest');
-        for (var i = 0; i < select.options.length; i++) {
-          if (select.options[i].text === serviceName) {
-            select.selectedIndex = i;
-            break;
-          }
-        }
-      }
-    }
-
     function switchTab(tabId, btn) {
       document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
       document.querySelectorAll('.tab-btn').forEach(function(b) {
@@ -378,40 +283,6 @@
 
     // Progressive enhancement: enable tab hiding only when JS is available
     document.querySelector('.services-section').classList.add('js-tabs');
-
-    // Handle direct navigation to hash URLs
-    (function() {
-      var hash = window.location.hash.replace('#', '');
-      if (hash === 'about') showPage('about');
-      else if (hash === 'contact') showPage('contact');
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var form = this;
-      var btn = form.querySelector('.submit-btn');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function(response) {
-        if (response.ok) {
-          form.style.display = 'none';
-          document.getElementById('form-success').style.display = 'block';
-          form.reset();
-        } else {
-          btn.textContent = 'Send Message';
-          btn.disabled = false;
-          alert('Something went wrong. Please try again or email us directly.');
-        }
-      }).catch(function() {
-        btn.textContent = 'Send Message';
-        btn.disabled = false;
-        alert('Something went wrong. Please try again or email us directly.');
-      });
-    });
   </script>
 
 </body>
